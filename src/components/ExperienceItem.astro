@@ -1,0 +1,120 @@
+---
+import ChevronRight from "@/assets/icons/chevronRight.svg";
+
+interface Props {
+  id: number;
+  title: string;
+  subtitle: string;
+  date: string;
+  description: string;
+  link?: string;
+  img?: string;
+}
+
+const { id, title, subtitle, date, description, link, img } = Astro.props;
+---
+
+<div class="flex flex-row space-x-4 space-y-4">
+  <div class="flex-none">
+    <span
+      class="relative flex shrink-0 overflow-hidden rounded-full border size-12 bg-muted-foreground dark:bg-foreground justify-center"
+    >
+      {
+        link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Visitar ${title}`}
+            class="w-full h-full"
+          >
+            {img ? (
+              <img
+                src={img}
+                alt={subtitle}
+                class="aspect-square h-full w-full object-contain"
+              />
+            ) : (
+              <div class="text-lg font-black text-blue-900 text-center">
+                {title.charAt(0)}
+              </div>
+            )}
+          </a>
+        ) : (
+          <>
+            {img ? (
+              <img
+                src={img}
+                alt={subtitle}
+                class="aspect-square h-full w-full object-contain"
+              />
+            ) : (
+              <div class="flex items-center justify-center h-full w- text-lg font-black text-blue dark:text-blue-400 text-center">
+                {title.charAt(0)}
+              </div>
+            )}
+          </>
+        )
+      }
+    </span>
+  </div>
+  <div class="rounded-lg text-gray-800 dark:text-gray-200">
+    <button
+      data-toggle={id}
+      class="w-full flex cursor-pointer focus:outline-none"
+    >
+      <div class="flex-grow items-center flex-col group">
+        <div class="flex flex-col">
+          <div class="flex items-center justify-between gap-x-2 text-base">
+            <h3
+              class="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm"
+            >
+              {title}
+              <span class="inline-flex gap-x-1"></span>
+              <ChevronRight
+                data-chevron={id}
+                class="size-4 transition-transform duration-300 opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+              />
+            </h3>
+            <div
+              class="text-xs sm:text-sm tabular-nums text-muted-foreground text-right"
+            >
+              {date}
+            </div>
+          </div>
+          <div class="font-sans text-xs flex">{subtitle}</div>
+        </div>
+      </div>
+    </button>
+
+    <div
+      data-content={id}
+      class="my-2 text-xs sm:text-sm overflow-hidden transition-all duration-500 max-h-0 opacity-0"
+    >
+      {description}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggles = document.querySelectorAll("[data-toggle]");
+    toggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const index = toggle.getAttribute("data-toggle");
+        const content = document.querySelector(`[data-content='${index}']`);
+        const chevron = document.querySelector(`[data-chevron='${index}']`);
+
+        if (content?.classList.contains("max-h-0")) {
+          content?.classList.remove("max-h-0", "opacity-0");
+          content?.classList.add("max-h-96", "opacity-100");
+          chevron?.classList.add("rotate-90");
+        } else {
+          content?.classList.remove("max-h-96", "opacity-100");
+          content?.classList.add("max-h-0", "opacity-0");
+          chevron?.classList.remove("rotate-90");
+        }
+      });
+    });
+  });
+</script>

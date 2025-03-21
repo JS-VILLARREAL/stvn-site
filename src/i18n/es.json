@@ -1,0 +1,75 @@
+{
+  "SEO_TITLE": "Steven Villarreal",
+  "SEO_DESCRIPTION": "Explora mi trabajo como desarrollador web, presentando proyectos que destacan mis habilidades en diseño, desarrollo y tecnología.",
+  "SEO": {
+    "ERROR_404_TITLE": "404 - Página no encontrada",
+    "ERROR_404_DESCRIPTION": "Página no encontrada (Error 404). Verifica la URL o explora nuestras secciones. ¿Necesitas ayuda? Contáctanos."
+  },
+  "NAV": {
+    "HOME": "Inicio",
+    "EXPERIENCE": "Experiencia",
+    "PROJECTS": "Proyectos",
+    "ABOUT_ME": "Sobre mí",
+    "CONTACT": "Contacto"
+  },
+  "HERO": {
+    "TITLE": "Hola, soy Steven!",
+    "SUBTITLE": "Desarrollador Full-stack",
+    "SUBTITLE_TWO": "Ingeniero de Sistemas y Desarrollador de Software. Me encanta explorar nuevas fronteras y construir soluciones que desafían lo convencional."
+  },
+  "ABOUT": {
+    "TITLE": "Sobre mí",
+    "DESCRIPTION": "Soy un apasionado de la tecnología y la programación, con habilidades en el desarrollo de aplicaciones web y sistemas de información. Me destaco por mi capacidad para trabajar en equipo, mi compromiso con la calidad y mi enfoque en la resolución de problemas. Me encanta aprender y enfrentar nuevos desafíos, y siempre estoy en busca de oportunidades para crecer y mejorar mis habilidades.",
+    "DESCRIPTION_2": "+2 años de experiencia profesional como <spam>Ingeniero de Sistemas en el Desarrollo Full-stack.</spam> Hábil en programación, bases de datos y creación de experiencias de usuario sin fisuras. <spam>Experto en tecnologías modernas y buenas prácticas de desarrollo</spam>, enfocado en la creación de soluciones robustas y escalables.",
+    "BTN_CONTACT": "Contáctame"
+  },
+  "EXPLORE_NOW": "Explora ahora",
+  "EXPERIENCE": {
+    "TITLE": "Experiencia laboral",
+    "JOB_1": {
+      "TITLE": "Desarrollador Frontend",
+      "SUBTITLE": "Technology Infosys",
+      "DATE": "Feb 2024 - Jul 2024",
+      "DESCRIPTION": "Desarrollé e implementé un sistema de administración para IPS usando ReactJS, NextJS y TypeScript. Me enfoqué en componentes reutilizables, integrando APIs para la gestión de personal, y colaboré con el equipo de backend para asegurar la transmisión de datos y cumplir con los plazos del proyecto."
+    },
+    "JOB_2": {
+      "TITLE": "Desarrollador Full-stack",
+      "SUBTITLE": "Proyecto freelance",
+      "DATE": "Ago 2023 - Oct 2023",
+      "DESCRIPTION": "Desarrollé sistemas de administración de datos con Vue.js y Vuetify en el frontend para interfaces dinámicas, y Django Rest Framework en el backend. Implementé operaciones CRUD y endpoints para una manipulación eficiente de los datos."
+    },
+    "JOB_3": {
+      "TITLE": "Analista de Sistemas Junior",
+      "SUBTITLE": "Solarium Energy S.A.S",
+      "DATE": "Jun 2020 - Feb 2022",
+      "DESCRIPTION": "Analicé requerimientos y programé sistemas de información con HTML5, JavaScript y CSS. Administré la evaluación docente en la Universidad Piloto de Colombia y colaboré en la instalación de sistemas para clínicas odontológicas y radiológicas, asegurando su eficiencia y adecuación a las necesidades específicas."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "SUBTITLE": "Echa un vistazo a mis últimos trabajos",
+    "DESCRIPTION": "Descubre mis trabajos recientes, donde la creatividad y las habilidades técnicas se unen en proyectos únicos.",
+    "BTN_VIEW": "Ver proyecto",
+    "BTN_SOURCE": "Código",
+    "PROJECT_1": {
+      "TITLE": "Sistema de administración de tareas",
+      "DESCRIPTION": "Desarrollé un sistema de administración de tareas con ReactJS y Firebase, que permite a los usuarios crear, editar y eliminar tareas, y marcarlas como completadas. Implementé autenticación de usuarios y almacenamiento de datos en tiempo real.",
+      "TECH_USED": "ReactJS, Firebase, HTML5, CSS3, JavaScript"
+    },
+    "PROJECT_2": {
+      "TITLE": "Sistema de administración de tareas",
+      "DESCRIPTION": "Desarrollé un sistema de administración de tareas con ReactJS y Firebase, que permite a los usuarios crear, editar y eliminar tareas, y marcarlas como completadas. Implementé autenticación de usuarios y almacenamiento de datos en tiempo real.",
+      "TECH_USED": "ReactJS, Firebase, HTML5, CSS3, JavaScript"
+    }
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Todos los derechos reservados.",
+    "MADE_WITH": "Creado con",
+    "AND": "y"
+  },
+  "ERROR_404": {
+    "TITLE": "Página no encontrada",
+    "DESCRIPTION": "Lo sentimos, no pudimos encontrar la página que buscas.",
+    "BACK_HOMEPAGE_BTN": "Volver al inicio"
+  }
+}

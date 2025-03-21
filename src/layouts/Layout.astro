@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const { currentLocale } = Astro;
+console.log(currentLocale);
+---
+
+<!doctype html>
+<html lang={currentLocale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div
+      class="fixed inset-0 -z-10 h-full w-full dark:items-center dark:px-5 darK:py-24 bg-white dark:bg-black [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#24e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#172554_100%)]"
+    >
+    </div>
+    <slot />
+  </body>
+</html>

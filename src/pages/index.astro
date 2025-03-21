@@ -1,0 +1,17 @@
+---
+import App from "@/components/App.astro";
+import Layout from "../layouts/Layout.astro";
+import "@fontsource-variable/roboto";
+import "../styles/global.css";
+
+import { getI18N } from "@/i18n";
+import Header2 from "@/components/Header2.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
+  <Header2 />
+  <App />
+</Layout>

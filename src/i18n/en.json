@@ -1,0 +1,75 @@
+{
+  "SEO_TITLE": "Steven Villarreal",
+  "SEO_DESCRIPTION": "Explore my work as a web developer, showcasing projects that highlight my skills in design, development, and technology.",
+  "SEO": {
+    "ERROR_404_TITLE": "404 - Page not found",
+    "ERROR_404_DESCRIPTION": "Page not found (Error 404). Check the URL or explore our sections. Need help? Contact us."
+  },
+  "NAV": {
+    "HOME": "Home",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "ABOUT_ME": "About me",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "TITLE": "Hi, I'm Steven!",
+    "SUBTITLE": "Full-stack Developer",
+    "SUBTITLE_TWO": "Systems Engineer and Software Developer. I love exploring new frontiers and building solutions that challenge the conventional."
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "DESCRIPTION": "I am passionate about technology and programming, with skills in web application development and information systems. I stand out for my ability to work in teams, my commitment to quality and my focus on problem solving. I love learning and facing new challenges, and I am always looking for opportunities to grow and improve my skills.",
+    "DESCRIPTION_2": "+2 years of professional experience as <spam>Systems Engineer in Full-stack Development.</spam> Skilled in programming, databases and seamless user experience reation. <spam>Expert in modern technologies and good development practices</spam>, focused on creating robust and scalable solutions.",
+    "BTN_CONTACT": "Contact me"
+  },
+  "EXPLORE_NOW": "Explore now",
+  "EXPERIENCE": {
+    "TITLE": "Work Experience",
+    "JOB_1": {
+      "TITLE": "Software Analyst",
+      "SUBTITLE": "Technology Infosys",
+      "DATE": "Feb 2024 - Jul 2024",
+      "DESCRIPTION": "Developed and implemented an administration system for IPS using ReactJS, NextJS and TypeScript. Focused on reusable components, integrating APIs for personnel management, and collaborating with the backend team to ensure data transmission and meet project deadlines."
+    },
+    "JOB_2": {
+      "TITLE": "Software Developer",
+      "SUBTITLE": "Freelance Project",
+      "DATE": "Aug 2023 - Oct 2023",
+      "DESCRIPTION": "Developed administration systems with Vue.js and Vuetify in the frontend for dynamic interfaces, and Django Rest Framework in the backend. Implemented CRUD operations and endpoints for efficient data manipulation."
+    },
+    "JOB_3": {
+      "TITLE": "Junior Systems Analyst",
+      "SUBTITLE": "Solarium Energy S.A.S",
+      "DATE": "Jun 2020 - Feb 2022",
+      "DESCRIPTION": "Analyzed requirements and programmed information systems with HTML5, JavaScript and CSS. Managed the teacher evaluation at the Universidad Piloto de Colombia and collaborated in the installation of systems for dental and radiological clinics, ensuring their efficiency and suitability to specific needs."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "My Projects",
+    "SUBTITLE": "Check out my latest works",
+    "DESCRIPTION": "Discover my recent work, where creativity and technical skills come together in unique projects.",
+    "BTN_VIEW": "Website",
+    "BTN_SOURCE": "Source",
+    "PROJECT_1": {
+      "TITLE": "Task Management System",
+      "DESCRIPTION": "Developed a task management system with ReactJS and Firebase, allowing users to create, edit, and delete tasks, and mark them as completed. Implemented user authentication and real-time data storage.",
+      "TECH_USED": "ReactJS, Firebase, HTML5, CSS3, JavaScript"
+    },
+    "PROJECT_2": {
+      "TITLE": "E-commerce Website",
+      "DESCRIPTION": "Designed and developed an e-commerce website with ReactJS, Redux, and Firebase, featuring a responsive layout, product catalog, shopping cart, and user authentication. Integrated payment gateway and order management system.",
+      "TECH_USED": "ReactJS, Redux, Firebase, HTML5, CSS3, JavaScript"
+    }
+  },
+  "FOOTER": {
+    "COPYRIGHT": "All rights reserved.",
+    "MADE_WITH": "Created with",
+    "AND": "and"
+  },
+  "ERROR_404": {
+    "TITLE": "Page not found",
+    "DESCRIPTION": "Sorry, we couldn’t find the page you’re looking for.",
+    "BACK_HOMEPAGE_BTN": "Back to home"
+  }
+}

@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "../ExperienceItem.astro";
+
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const EXPERIENCE = [
+  {
+    id: 1,
+    date: i18n.EXPERIENCE.JOB_1.DATE,
+    title: i18n.EXPERIENCE.JOB_1.TITLE,
+    subtitle: i18n.EXPERIENCE.JOB_1.SUBTITLE,
+    description: i18n.EXPERIENCE.JOB_1.DESCRIPTION,
+    img: "",
+    link: "",
+  },
+  {
+    id: 2,
+    date: i18n.EXPERIENCE.JOB_2.DATE,
+    title: i18n.EXPERIENCE.JOB_2.TITLE,
+    subtitle: i18n.EXPERIENCE.JOB_2.SUBTITLE,
+    description: i18n.EXPERIENCE.JOB_2.DESCRIPTION,
+    img: "",
+    link: "",
+  },
+  {
+    id: 3,
+    date: i18n.EXPERIENCE.JOB_3.DATE,
+    title: i18n.EXPERIENCE.JOB_3.TITLE,
+    subtitle: i18n.EXPERIENCE.JOB_3.SUBTITLE,
+    description: i18n.EXPERIENCE.JOB_3.DESCRIPTION,
+    img: "/solariumenergy.png",
+    link: "https://solariumenergy.co/",
+  },
+];
+---
+
+{
+  EXPERIENCE.map((experience) => (
+    <div class="flex min-h-0 flex-col gap-y-3">
+      <ExperienceItem {...experience} />
+    </div>
+  ))
+}

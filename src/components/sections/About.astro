@@ -1,0 +1,13 @@
+---
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class="flex">
+  <p
+    class="text-muted-foreground text-pretty dark:[&>spam]:text-gray-200 [&>spam]:text-gray-800 [&>spam]:underline underline-offset-2"
+    set:html={i18n.ABOUT.DESCRIPTION_2}
+  />
+</div>

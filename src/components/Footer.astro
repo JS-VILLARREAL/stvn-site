@@ -1,0 +1,76 @@
+---
+import LinkedinIcon from "@/icons/Linkedin.astro";
+import GithubIcon from "@/icons/GitHub.astro";
+import InstagramIcon from "@/icons/Instagram.astro";
+
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const year = new Date().getFullYear();
+
+const SOCIALS = [
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/stivenvr",
+    icon: LinkedinIcon,
+  },
+  // {
+  //   name: "Contactame",
+  //   url: "#",
+  // },
+  {
+    name: "GitHub",
+    url: "https://github.com/JS-VILLARREAL",
+    icon: GithubIcon,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/stiveenvr",
+    icon: InstagramIcon,
+  },
+];
+---
+
+<footer id="footer" class="w-full">
+  <div class="flex flex-col items-center py-8">
+    <div
+      class="flex items-center justify-center gap-2 pb-2 text-teal-600 sm:justify-start dark:text-teal-300 sm:gap-x-3"
+    >
+      {
+        SOCIALS.map((social) => (
+          <a
+            href={social.url}
+            class="inline-flex items-center mx-2 text-gray-600 hover:text-gray-800 dark:text-white/70 dark:hover:text-white"
+          >
+            {social.icon && <social.icon class="mr-1 size-5" />}
+          </a>
+        ))
+      }
+    </div>
+    <p
+      class="mt-4 text-center text-gray-700 text-xs/relaxed dark:text-gray-400"
+    >
+      &copy; {year}. {i18n.FOOTER.COPYRIGHT}
+      {i18n.FOOTER.MADE_WITH}
+      <a
+        href="https://astro.build"
+        target="_blank"
+        rel="noopener"
+        class="text-gray-900 underline transition dark:text-white/70 dark:hover:text-white"
+      >
+        Astro</a
+      >
+      {i18n.FOOTER.AND}
+      <a
+        href="https://tailwindcss.com"
+        target="_blank"
+        rel="noopener"
+        class="text-gray-900 underline transition dark:text-white/70 dark:hover:text-white"
+      >
+        Tailwind CSS</a
+      >.
+    </p>
+  </div>
+</footer>

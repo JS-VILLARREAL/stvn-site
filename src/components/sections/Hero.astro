@@ -1,0 +1,28 @@
+---
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class="flex gap-2 gap-x-8 justify-between items-center">
+  <div
+    class="flex items-center justify-center rounded-full shadow-xl size-28 sm:size-32 bg-gradient-to-br from-blue-600 via-purple-500 to-orange-500 dark:shadow-lg shadow-black/30 dark:shadow-blue-500/50 shrink-0 overflow-hidden"
+  >
+    <span>
+      <img src="/memoji.webp" alt="Stiven Villarreal" class="aspect-square" />
+    </span>
+  </div>
+  <div class="flex flex-col space-y-2">
+    <h1
+      class="text-2xl font-black text-gray-800 md:text-5xl dark:text-gray-200"
+    >
+      {i18n.HERO.TITLE}
+    </h1>
+    <h3
+      class="text-gray-800 dark:text-gray-200 text-base inline-block font-medium font-sans"
+    >
+      {i18n.HERO.SUBTITLE_TWO}
+    </h3>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+---
+import { getI18N } from "@/i18n";
+import Card from "../Card.astro";
+import type { preview } from "astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const PROJECTS = [
+  {
+    id: 1,
+    title: i18n.PROJECTS.PROJECT_1.TITLE,
+    description: i18n.PROJECTS.PROJECT_1.DESCRIPTION,
+    image: "/project1.png",
+    preview: "https://perfect-gif.vercel.app/",
+    code: "",
+  },
+  {
+    id: 2,
+    title: i18n.PROJECTS.PROJECT_2.TITLE,
+    description: i18n.PROJECTS.PROJECT_2.DESCRIPTION,
+    image: "/project2.png",
+    preview: "https://perfect-gif.vercel.app/",
+    code: "",
+  },
+];
+---
+
+<div class="grid grid-cols-2 gap-4 content-stretch pt-6">
+  {PROJECTS.map((project) => <Card {...project} />)}
+</div>
