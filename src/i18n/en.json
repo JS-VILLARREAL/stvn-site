@@ -20,7 +20,7 @@
   "HERO": {
     "TITLE": "Hi, I'm Steven!",
     "SUBTITLE": "Full-stack Developer",
-    "SUBTITLE_TWO": "Systems Engineer and Software Developer. I love exploring new frontiers and building solutions that challenge the conventional."
+    "SUBTITLE_TWO": "<spam>Systems Engineer</spam> & <spam>Software Developer</spam>. I enjoy exploring new frontiers and building solutions that challenge the conventional."
   },
   "ABOUT": {
     "TITLE": "About Me",

@@ -13,14 +13,10 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <main class="container mx-auto min-h-screen">
-  <SectionConteiner id="inicio" class="pt-26 pb-14">
+  <SectionConteiner id="inicio" class="pt-24 pb-14">
     <Hero />
   </SectionConteiner>
-  <SectionConteiner id="sobremi" class="pb-14">
-    <TitleSection title={i18n.ABOUT.TITLE} />
-    <About />
-  </SectionConteiner>
-  <SectionConteiner id="experiencia" class="pb-14">
+  <SectionConteiner id="inicio" class="pb-14">
     <TitleSection title={i18n.EXPERIENCE.TITLE} />
     <Experience />
   </SectionConteiner>
@@ -40,10 +36,11 @@ const i18n = getI18N({ currentLocale });
     </div>
     <Project />
   </SectionConteiner>
-  <SectionConteiner id="skill" class="pb-14">
+  <SectionConteiner id="sobremi" class="pb-14">
+    <TitleSection title={i18n.ABOUT.TITLE} />
+    <About />
     <TitleSection title="Skills" />
   </SectionConteiner>
-
   <SectionConteiner id="contacto" class="pb-16">
     <TitleSection title="Contacto" />
     <h2

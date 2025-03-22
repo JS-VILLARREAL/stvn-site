@@ -20,8 +20,8 @@ const translatePath = useTranslatedPath(lang);
 const navItems = [
   {
     title: i18n.NAV.EXPERIENCE,
-    label: "experiencia",
-    url: "/#experiencia",
+    label: "inicio",
+    url: "/#inicio",
   },
   {
     title: i18n.NAV.PROJECTS,
@@ -96,7 +96,7 @@ const navItems = [
     const observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.8,
+      threshold: 0.6,
     });
 
     sections.forEach((section) => {
