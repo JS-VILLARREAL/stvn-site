@@ -8,10 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@fontsource-variable/roboto':
-        specifier: ^5.2.5
-        version: 5.2.5
-      '@fontsource/poppins':
+      '@fontsource-variable/inter':
         specifier: ^5.2.5
         version: 5.2.5
       '@tailwindcss/vite':
@@ -213,11 +210,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/roboto@5.2.5':
-    resolution: {integrity: sha512-csqBSOWXv0h5IbPhEqYJua6/nxl7dSNZbBOMeXSO9aqzgPw3GpfgC9kL5M6ULFLRaoDoBD4U9QctoDLKMaTyMg==}
-
-  '@fontsource/poppins@5.2.5':
-    resolution: {integrity: sha512-1S3k45pZOz2jqGPPqKw0in3uxFwnB+d5jSU8Tp9YwH/dIJptE3jdkQbYN0QD861GtuOpn6QhPW/yKt1w7hVRBQ==}
+  '@fontsource-variable/inter@5.2.5':
+    resolution: {integrity: sha512-TrWffUAFOnT8zroE9YmGybagoOgM/HjRqMQ8k9R0vVgXlnUh/vnpbGPAS/Caz1KIlOPnPGh6fvJbb7DHbFCncA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1676,9 +1670,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.1':
     optional: true
 
-  '@fontsource-variable/roboto@5.2.5': {}
-
-  '@fontsource/poppins@5.2.5': {}
+  '@fontsource-variable/inter@5.2.5': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
