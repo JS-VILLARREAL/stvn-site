@@ -12,6 +12,11 @@
     "ABOUT_ME": "Sobre mí",
     "CONTACT": "Contacto"
   },
+  "THEME": {
+    "TOGGLE": "Elige un tema",
+    "LIGHT": "Claro",
+    "DARK": "Oscuro"
+  },
   "HERO": {
     "TITLE": "Hola, soy Steven!",
     "SUBTITLE": "Desarrollador Full-stack",
