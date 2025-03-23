@@ -13,7 +13,7 @@ const translatePath = useTranslatedPath(lang);
 
 const currentLocaleData = LANGUAGES[lang];
 const otherLocales = Object.values(LANGUAGES).filter(
-  (locale) => locale.code !== lang
+  (locale) => locale.code !== lang,
 );
 ---
 
@@ -23,28 +23,28 @@ const otherLocales = Object.values(LANGUAGES).filter(
   >
     <button
       type="button"
-      class="inline-flex items-center justify-start w-full px-3 py-2 gap-x-2"
+      class="inline-flex items-center justify-start w-full p-2 gap-x-2"
       aria-expanded="true"
       aria-haspopup="true"
     >
       <currentLocaleData.flag />
       {currentLocaleData.name}
-      <ChevronIcon />
+      <ChevronIcon
+        class="size-4 transition-all duration-200 group-hover:rotate-180"
+      />
     </button>
     <ul
-      class="group-hover:block group-hover:animate-fade-down group-hover:animate-duration-200 hidden pt-0.5 absolute w-full"
+      class="group-hover:block group-hover:animate-fade-down group-hover:animate-duration-200 hidden pt-1 absolute w-full"
     >
       {
         otherLocales.map((locale) => (
-          <li class="py-[2px]">
-            <a
-              class="inline-flex items-center justify-start w-full px-3 py-2 whitespace-no-wrap rounded-md bg-black/30 hover:bg-black/70 dark:hover:bg-gray-500/50 gap-x-2"
-              href={translatePath(`/${route ? route : ""}`, locale.code)}
-            >
-              <locale.flag />
-              {locale.name}
-            </a>
-          </li>
+          <a
+            class="inline-flex items-center justify-start w-full px-2 py-2 whitespace-no-wrap rounded-md bg-black/30 hover:bg-black/70 dark:hover:bg-gray-500/50 gap-x-2 "
+            href={translatePath(`/${route ? route : ""}`, locale.code)}
+          >
+            <locale.flag />
+            {locale.name}
+          </a>
         ))
       }
     </ul>
