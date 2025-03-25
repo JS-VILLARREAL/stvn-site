@@ -17,7 +17,7 @@ const { id, title, subtitle, date, description, link, img } = Astro.props;
 <div class="flex flex-row space-x-4 space-y-4">
   <div class="flex-none">
     <span
-      class="relative flex shrink-0 overflow-hidden rounded-full border size-12 bg-muted-foreground dark:bg-foreground justify-center"
+      class="relative flex shrink-0 overflow-hidden rounded-full border size-12 bg-muted dark:bg-foreground justify-center items-center"
     >
       {
         link ? (
@@ -35,7 +35,7 @@ const { id, title, subtitle, date, description, link, img } = Astro.props;
                 class="aspect-square h-full w-full object-contain"
               />
             ) : (
-              <div class="text-lg font-black text-blue-900 text-center">
+              <div class="text-lg font-black text-blue-400 text-center">
                 {title.charAt(0)}
               </div>
             )}
@@ -49,7 +49,7 @@ const { id, title, subtitle, date, description, link, img } = Astro.props;
                 class="aspect-square h-full w-full object-contain"
               />
             ) : (
-              <div class="flex items-center justify-center h-full w- text-lg font-black text-blue dark:text-blue-400 text-center">
+              <div class="flex items-center justify-center h-full w- text-lg font-black text-blue-400 text-center">
                 {title.charAt(0)}
               </div>
             )}
@@ -58,7 +58,7 @@ const { id, title, subtitle, date, description, link, img } = Astro.props;
       }
     </span>
   </div>
-  <div class="rounded-lg text-gray-800 dark:text-gray-200">
+  <div class="rounded-lg text-primary">
     <button
       data-toggle={id}
       class="w-full flex cursor-pointer focus:outline-none"
@@ -89,15 +89,15 @@ const { id, title, subtitle, date, description, link, img } = Astro.props;
 
     <div
       data-content={id}
-      class="my-2 text-xs sm:text-sm overflow-hidden transition-all duration-500 max-h-0 opacity-0"
+      class="my-2 text-xs sm:text-sm overflow-hidden transition-all duration-300 max-h-0 opacity-0"
     >
-      {description}
+      <p class="" set:html={description} />
     </div>
   </div>
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("astro:page-load", () => {
     const toggles = document.querySelectorAll("[data-toggle]");
     toggles.forEach((toggle) => {
       toggle.addEventListener("click", () => {
