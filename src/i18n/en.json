@@ -20,12 +20,12 @@
   "HERO": {
     "TITLE": "Hi, I'm Steven!",
     "SUBTITLE": "Full-stack Developer",
-    "SUBTITLE_TWO": "<spam>Systems Engineer</spam> & <spam>Software Developer</spam>. I enjoy exploring new frontiers and building solutions that challenge the conventional."
+    "SUBTITLE_TWO": "<span>Systems Engineer</span> & <span>Software Developer</span>. I enjoy exploring new frontiers and building solutions that challenge the conventional."
   },
   "ABOUT": {
     "TITLE": "About Me",
     "DESCRIPTION": "I am passionate about technology and programming, with skills in web application development and information systems. I stand out for my ability to work in teams, my commitment to quality and my focus on problem solving. I love learning and facing new challenges, and I am always looking for opportunities to grow and improve my skills.",
-    "DESCRIPTION_2": "+2 years of professional experience as <spam>Systems Engineer in Full-stack Development.</spam> Skilled in programming, databases and seamless user experience reation. <spam>Expert in modern technologies and good development practices</spam>, focused on creating robust and scalable solutions.",
+    "DESCRIPTION_2": "+2 years of professional experience as <span>Systems Engineer in Full-stack Development.</span> Skilled in programming, databases and seamless user experience reation. <span>Expert in modern technologies and good development practices</span>, focused on creating robust and scalable solutions.",
     "BTN_CONTACT": "Contact me"
   },
   "EXPLORE_NOW": "Explore now",
@@ -35,7 +35,7 @@
       "TITLE": "Software Analyst",
       "SUBTITLE": "Technology Infosys",
       "DATE": "Feb 2024 - Jul 2024",
-      "DESCRIPTION": "Developed and implemented an administration system for IPS using ReactJS, NextJS and TypeScript. Focused on reusable components, integrating APIs for personnel management, and collaborating with the backend team to ensure data transmission and meet project deadlines."
+      "DESCRIPTION": "Developed and implemented a comprehensive management system for Healthcare Service Providers (IPS) using <span>Next.js</span>, <span>TypeScript</span>, and <span>Tailwind CSS</span>. I focused on building reusable components and integrating APIs to streamline personnel management. Collaborating closely with the backend team, I ensured efficient data transmission, delivering a robust, scalable solution while meeting project deadlines."
     },
     "JOB_2": {
       "TITLE": "Software Developer",

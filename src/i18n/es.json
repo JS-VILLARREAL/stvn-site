@@ -20,12 +20,12 @@
   "HERO": {
     "TITLE": "Hola, soy Steven!",
     "SUBTITLE": "Desarrollador Full-stack",
-    "SUBTITLE_TWO": "<spam>Ingeniero de Sistemas</spam> y <spam>Desarrollador de Software</spam>. Disfruto explorar nuevas fronteras y construir soluciones que desafían lo convencional."
+    "SUBTITLE_TWO": "<span>Ingeniero de Sistemas</span> y <span>Desarrollador de Software</span>. Disfruto explorar nuevas fronteras y construir soluciones que desafían lo convencional."
   },
   "ABOUT": {
     "TITLE": "Sobre mí",
     "DESCRIPTION": "Soy un apasionado de la tecnología y la programación, con habilidades en el desarrollo de aplicaciones web y sistemas de información. Me destaco por mi capacidad para trabajar en equipo, mi compromiso con la calidad y mi enfoque en la resolución de problemas. Me encanta aprender y enfrentar nuevos desafíos, y siempre estoy en busca de oportunidades para crecer y mejorar mis habilidades.",
-    "DESCRIPTION_2": "+2 años de experiencia profesional como <spam>Ingeniero de Sistemas en el Desarrollo Full-stack.</spam> Hábil en programación, bases de datos y creación de experiencias de usuario sin fisuras. <spam>Experto en tecnologías modernas y buenas prácticas de desarrollo</spam>, enfocado en la creación de soluciones robustas y escalables.",
+    "DESCRIPTION_2": "+2 años de experiencia profesional como <span>Ingeniero de Sistemas en el Desarrollo Full-stack.</span> Hábil en programación, bases de datos y creación de experiencias de usuario sin fisuras. <span>Experto en tecnologías modernas y buenas prácticas de desarrollo</span>, enfocado en la creación de soluciones robustas y escalables.",
     "BTN_CONTACT": "Contáctame"
   },
   "EXPLORE_NOW": "Explora ahora",
@@ -35,7 +35,7 @@
       "TITLE": "Desarrollador Frontend",
       "SUBTITLE": "Technology Infosys",
       "DATE": "Feb 2024 - Jul 2024",
-      "DESCRIPTION": "Desarrollé e implementé un sistema de administración para IPS usando ReactJS, NextJS y TypeScript. Me enfoqué en componentes reutilizables, integrando APIs para la gestión de personal, y colaboré con el equipo de backend para asegurar la transmisión de datos y cumplir con los plazos del proyecto."
+      "DESCRIPTION": "Desarrollé e implementé un sistema de gestión integral para proveedores de servicios sanitarios (IPS) utilizando Next.js, TypeScript y Tailwind CSS. Me centré en construir componentes reutilizables e integrar APIs para agilizar la gestión de personal. Colaborando estrechamente con el equipo de backend, aseguré una transmisión de datos eficiente, entregando una solución robusta y escalable mientras cumplía con los plazos del proyecto."
     },
     "JOB_2": {
       "TITLE": "Desarrollador Full-stack",
