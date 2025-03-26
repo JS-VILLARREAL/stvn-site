@@ -1,7 +1,6 @@
 ---
 import { getI18N } from "@/i18n";
-import Card from "../Card.astro";
-import type { preview } from "astro";
+import CardProject from "../CardProject.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -20,7 +19,7 @@ const PROJECTS = [
     title: i18n.PROJECTS.PROJECT_2.TITLE,
     description: i18n.PROJECTS.PROJECT_2.DESCRIPTION,
     image: "/project2.png",
-    preview: "https://perfect-gif.vercel.app/",
+    preview: "https://stvn-self.vercel.app/",
     code: "",
   },
 ];
@@ -36,6 +35,6 @@ const PROJECTS = [
     {i18n.PROJECTS.DESCRIPTION}
   </p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 content-stretch pt-6">
-    {PROJECTS.map((project) => <Card {...project} />)}
+    {PROJECTS.map((project) => <CardProject {...project} />)}
   </div>
 </div>
