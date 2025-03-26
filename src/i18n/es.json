@@ -31,19 +31,19 @@
   "EXPLORE_NOW": "Explora ahora",
   "EXPERIENCE": {
     "TITLE": "Experiencia laboral",
-    "JOB_1": {
+    "JOB_2": {
       "TITLE": "Desarrollador Frontend",
       "SUBTITLE": "Technology Infosys",
       "DATE": "Feb 2024 - Jul 2024",
-      "DESCRIPTION": "Desarrollé e implementé un sistema de gestión integral para proveedores de servicios sanitarios (IPS) utilizando Next.js, TypeScript y Tailwind CSS. Me centré en construir componentes reutilizables e integrar APIs para agilizar la gestión de personal. Colaborando estrechamente con el equipo de backend, aseguré una transmisión de datos eficiente, entregando una solución robusta y escalable mientras cumplía con los plazos del proyecto."
+      "DESCRIPTION": "Contribui al desarrollé e implementación de un sistema de gestión integral para Institución Prestadora de Servicios de Salud (IPS) utilizando Next.js, TypeScript y Tailwind CSS. Me centré en construir componentes reutilizables e integrar APIs para agilizar la gestión de personal. Colaborando estrechamente con el equipo de backend, aseguré una transmisión de datos eficiente, entregando una solución robusta y escalable mientras cumplía con los plazos del proyecto."
     },
-    "JOB_2": {
+    "JOB_FREE": {
       "TITLE": "Desarrollador Full-stack",
       "SUBTITLE": "Proyecto freelance",
       "DATE": "Ago 2023 - Oct 2023",
       "DESCRIPTION": "Desarrollé sistemas de administración de datos con Vue.js y Vuetify en el frontend para interfaces dinámicas, y Django Rest Framework en el backend. Implementé operaciones CRUD y endpoints para una manipulación eficiente de los datos."
     },
-    "JOB_3": {
+    "JOB_1": {
       "TITLE": "Analista de Sistemas Junior",
       "SUBTITLE": "Solarium Energy S.A.S",
       "DATE": "Jun 2020 - Feb 2022",
@@ -51,9 +51,9 @@
     }
   },
   "PROJECTS": {
-    "TITLE": "Proyectos",
-    "SUBTITLE": "Echa un vistazo a mis últimos trabajos",
-    "DESCRIPTION": "Descubre mis trabajos recientes, donde la creatividad y las habilidades técnicas se unen en proyectos únicos.",
+    "TITLE": "Mis Proyectos",
+    "SUBTITLE": "Descubra mis trabajos recientes",
+    "DESCRIPTION": "Déjese inspirar por mis trabajos destacados, donde la creatividad y la destreza técnica se unen para crear proyectos únicos.",
     "BTN_VIEW": "Ver proyecto",
     "BTN_SOURCE": "Código",
     "PROJECT_1": {

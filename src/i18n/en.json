@@ -31,19 +31,19 @@
   "EXPLORE_NOW": "Explore now",
   "EXPERIENCE": {
     "TITLE": "Work Experience",
-    "JOB_1": {
+    "JOB_2": {
       "TITLE": "Software Analyst",
       "SUBTITLE": "Technology Infosys",
       "DATE": "Feb 2024 - Jul 2024",
-      "DESCRIPTION": "Developed and implemented a comprehensive management system for Healthcare Service Providers (IPS) using <span>Next.js</span>, <span>TypeScript</span>, and <span>Tailwind CSS</span>. I focused on building reusable components and integrating APIs to streamline personnel management. Collaborating closely with the backend team, I ensured efficient data transmission, delivering a robust, scalable solution while meeting project deadlines."
+      "DESCRIPTION": "Contributed to the development and implementation of a comprehensive management system for a Health Services Provider Institution (IPS) using Next.js, TypeScript and Tailwind CSS. I focused on building reusable components and integrating APIs to streamline staff management. Collaborating closely with the backend team, I ensured efficient data transmission, delivering a robust and scalable solution while meeting project deadlines."
     },
-    "JOB_2": {
+    "JOB_FREE": {
       "TITLE": "Software Developer",
       "SUBTITLE": "Freelance Project",
       "DATE": "Aug 2023 - Oct 2023",
       "DESCRIPTION": "Developed administration systems with Vue.js and Vuetify in the frontend for dynamic interfaces, and Django Rest Framework in the backend. Implemented CRUD operations and endpoints for efficient data manipulation."
     },
-    "JOB_3": {
+    "JOB_1": {
       "TITLE": "Junior Systems Analyst",
       "SUBTITLE": "Solarium Energy S.A.S",
       "DATE": "Jun 2020 - Feb 2022",
@@ -52,8 +52,8 @@
   },
   "PROJECTS": {
     "TITLE": "My Projects",
-    "SUBTITLE": "Check out my latest works",
-    "DESCRIPTION": "Discover my recent work, where creativity and technical skills come together in unique projects.",
+    "SUBTITLE": "Discover my recent works",
+    "DESCRIPTION": "Be inspired by my featured work, where creativity and technical skill come together in unique projects.",
     "BTN_VIEW": "Website",
     "BTN_SOURCE": "Source",
     "PROJECT_1": {
@@ -62,7 +62,7 @@
       "TECH_USED": "ReactJS, Firebase, HTML5, CSS3, JavaScript"
     },
     "PROJECT_2": {
-      "TITLE": "E-commerce Website",
+      "TITLE": "Portfolio Site",
       "DESCRIPTION": "Designed and developed an e-commerce website with ReactJS, Redux, and Firebase, featuring a responsive layout, product catalog, shopping cart, and user authentication. Integrated payment gateway and order management system.",
       "TECH_USED": "ReactJS, Redux, Firebase, HTML5, CSS3, JavaScript"
     }
