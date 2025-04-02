@@ -2,6 +2,7 @@
 import App from "@/components/App.astro";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
 import "@/styles/global.css";
 
 import { getI18N } from "@/i18n";
@@ -13,4 +14,5 @@ const i18n = getI18N({ currentLocale });
 <Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
   <Header />
   <App />
+  <Footer />
 </Layout>
