@@ -30,43 +30,32 @@ const i18n = getI18N({ currentLocale });
     </div>
     <Project />
   </SectionConteiner>
-  <SectionConteiner id="sobremi" class="pb-14">
+  <SectionConteiner id="sobre-mi" class="pb-14">
     <TitleSection title={i18n.ABOUT.TITLE} class="pb-2" />
     <About />
-    <!-- <TitleSection title="Skills" /> -->
   </SectionConteiner>
   <SectionConteiner id="contacto" class="pb-16">
-    <TitleSection title="Contacto" class="pb-2" />
-    <h2
-      class="flex gap-x-2 items-center text-2xl md:text-3xl font-semibold mb-6 text-gray-200"
-    >
-      <div class="flex flex-col gap-y-4">
-        <p class="text-base text-gray-500 dark:text-gray-200">
-          ¿Quieres trabajar juntos en tu próximo proyecto? ¡Contáctame!
-        </p>
+    <div class="flex flex-col justify-center items-center">
+      <span class="px-2 py-0.5 rounded-lg bg-secondary-foreground">
+        <TitleSection title="Contacto" class="pb-0" />
+      </span>
+      <h2
+        class="text-3xl font-bold tracking-tighter sm:text-5xl mt-2 text-primary"
+      >
+        Get in Touch
+      </h2>
+      <p
+        class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+      >
+        Want to chat? Just shoot me a dm
         <a
-          href="mailto:stivenvillarreal@gmail.com"
-          class="text-white text-sm inline-flex items-center underline hover:text-gray-300"
+          class="text-blue-500 hover:underline"
+          href="https://dub.sh/dillion-twitter"
         >
-          Envíame un correo
-          <svg
-            class="size-4 ms-[4px]"
-            xmlns="http://www.w3.org/2000/svg"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M17 7l-10 10"></path>
-            <path d="M8 7l9 0l0 9"></path>
-          </svg>
+          with a direct question on twitter
         </a>
-      </div>
-    </h2>
+        and I'll respond whenever I can. I will ignore all soliciting.
+      </p>
+    </div>
   </SectionConteiner>
 </main>

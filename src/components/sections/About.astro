@@ -3,11 +3,58 @@ import { getI18N } from "@/i18n";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const SKILLS = [
+  "React",
+  "Next.js",
+  "Typescript",
+  "Node.js",
+  "Python",
+  "Astro",
+  "Postgres",
+  "Docker",
+  "Kubernetes",
+  "Tailwind CSS",
+  "MongoDB",
+  "Django",
+  "Firebase",
+  "AWS",
+];
 ---
 
-<div class="flex">
-  <p
-    class="text-muted-foreground text-pretty dark:[&>spam]:text-gray-200 [&>spam]:text-gray-800 [&>spam]:underline underline-offset-2"
-    set:html={i18n.ABOUT.DESCRIPTION_2}
-  />
+<div
+  class="grid grid-cols-4 grid-rows-4 gap-4 [&>div]:bg-accent [&>div]:rounded-lg"
+>
+  <div class="col-span-2 row-span-3">1</div>
+  <div class="col-span-2 col-start-1 row-start-4">2</div>
+  <div class="col-span-2 col-start-3 row-start-1 p-4">
+    <div class="flex gap-x-2 items-center text-gray-200">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="size-4 text-green-500 animate-pulse"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z"
+        ></path>
+      </svg>
+      <span class="text-primary font-medium">Available to work </span>
+    </div>
+  </div>
+  <div class="col-span-2 row-span-3 col-start-3 row-start-2 p-4">
+    <h2 class="font-semibold mb-4 text-primary">Tech stacks</h2>
+    <ul class="flex gap-2 flex-wrap">
+      {
+        SKILLS.map((skill) => (
+          <li class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80">
+            {skill}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>
