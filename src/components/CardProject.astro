@@ -9,58 +9,64 @@ interface Props {
   image?: string;
   preview?: string;
   code?: string;
+  skills?: string[];
 }
 
-const { title, description, image, preview, code } = Astro.props;
+const { title, description, image, preview, code, skills } = Astro.props;
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
-
-console.log("Link: ", preview);
 ---
 
 <div
-  class="max-w-sm bg-white border border-gray-200 rounded-2xl shadow-sm dark:bg-transparent dark:border-gray-700 overflow-hidden"
+  class="max-w-sm bg-white rounded-2xl shadow-sm dark:bg-accent overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out"
 >
-  <div class="overflow-hidden">
-    <a href={preview} target="_blank" rel="noopener noreferrer">
-      <img
-        class="rounded-t-2xl transition-all hover:scale-110"
-        src={image}
-        alt={title}
-      />
-    </a>
+  <div class="relative overflow-hidden group">
+    <img
+      class="rounded-t-2xl transition-all duration-600 ease-in-out scale-125 group-hover:scale-110"
+      src={image}
+      alt={title}
+    />
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-md text-white px-5 py-2 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-600"
+    >
+      <span class="text-sm font-bold">{title}</span>
+      <div>
+        <a
+          href={preview}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors hover:text-black hover:bg-[#f5f5f5] py-2 size-8 px-0"
+        >
+          <GlobeIcon class="size-4" />
+        </a>
+        <a
+          href={code}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors hover:text-black hover:bg-[#f5f5f5] py-2 size-8 px-0"
+        >
+          <GithubIcon class="size-4" />
+        </a>
+      </div>
+    </div>
   </div>
+
   <div class="p-5">
-    <a href="#">
-      <h5
-        class="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white"
-      >
-        {title}
-      </h5>
-    </a>
     <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">
       {description}
     </p>
-    <div class="flex gap-2">
-      <a
-        href={preview}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:shadow-lg dark:shadow-blue-800/80"
-      >
-        <GlobeIcon class="size-3 mr-1" />
-        {i18n.PROJECTS.BTN_VIEW}
-      </a>
-      <a
-        href={code}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:shadow-lg dark:shadow-blue-800/80"
-      >
-        <GithubIcon class="size-3 mr-1" />
-        {i18n.PROJECTS.BTN_SOURCE}
-      </a>
+    <!-- colocar los skills aqui -->
+    <div class="flex justify-between gap-2">
+      <div class="flex gap-2 flex-wrap">
+        {
+          skills?.map((skill) => (
+            <span class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80">
+              {skill}
+            </span>
+          ))
+        }
+      </div>
     </div>
   </div>
 </div>
