@@ -32,7 +32,7 @@
   "EXPERIENCE": {
     "TITLE": "Experiencia laboral",
     "JOB_2": {
-      "TITLE": "Desarrollador Frontend",
+      "TITLE": "Desarrollador de Software",
       "SUBTITLE": "Technology Infosys",
       "DATE": "Feb 2024 - Jul 2024",
       "DESCRIPTION": "Contribui al desarrollé e implementación de un sistema de gestión integral para Institución Prestadora de Servicios de Salud (IPS) utilizando Next.js, TypeScript y Tailwind CSS. Me centré en construir componentes reutilizables e integrar APIs para agilizar la gestión de personal. Colaborando estrechamente con el equipo de backend, aseguré una transmisión de datos eficiente, entregando una solución robusta y escalable mientras cumplía con los plazos del proyecto."
@@ -51,20 +51,20 @@
     }
   },
   "PROJECTS": {
-    "TITLE": "Mis Proyectos",
-    "SUBTITLE": "Descubra mis trabajos recientes",
+    "TITLE": "Mis proyectos",
+    "SUBTITLE": "Descúbre mis trabajos recientes",
     "DESCRIPTION": "Déjese inspirar por mis trabajos destacados, donde la creatividad y la destreza técnica se unen para crear proyectos únicos.",
     "BTN_VIEW": "Ver proyecto",
     "BTN_SOURCE": "Código",
     "PROJECT_1": {
       "TITLE": "Sistema de administración de tareas",
       "DESCRIPTION": "Desarrollé un sistema de administración de tareas con ReactJS y Firebase, que permite a los usuarios crear, editar y eliminar tareas, y marcarlas como completadas. Implementé autenticación de usuarios y almacenamiento de datos en tiempo real.",
-      "TECH_USED": "ReactJS, Firebase, HTML5, CSS3, JavaScript"
+      "TECH_USED": ["ReactJS", "Firebase", "HTML5", "CSS3", "JavaScript"]
     },
     "PROJECT_2": {
       "TITLE": "Sistema de administración de tareas",
-      "DESCRIPTION": "Desarrollé un sistema de administración de tareas con ReactJS y Firebase, que permite a los usuarios crear, editar y eliminar tareas, y marcarlas como completadas. Implementé autenticación de usuarios y almacenamiento de datos en tiempo real.",
-      "TECH_USED": "ReactJS, Firebase, HTML5, CSS3, JavaScript"
+      "DESCRIPTION": "Este portafolio es el resultado de un enfoque estructurado y profesional para simular un ambiente de trabajo real. Desarrollé esta plataforma para mostrar mis proyectos, habilidades y experiencia. Cada sección refleja mi crecimiento como desarrollador de software.",
+      "TECH_USED": ["Astro", "TailwindCSS"]
     }
   },
   "FOOTER": {
