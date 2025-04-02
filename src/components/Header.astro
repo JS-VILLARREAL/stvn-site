@@ -2,6 +2,7 @@
 import ThemeToggle from "@/components/Theme.astro";
 import SelectorLanguage from "@/components/LanguageSelector.astro";
 import MenuIcon from "@/assets/icons/menu.svg";
+import LinkedinIcon from "@/assets/icons/linkedin.svg";
 
 import { getI18N } from "@/i18n/index";
 
@@ -22,7 +23,7 @@ const navItems = [
   {
     title: i18n.NAV.ABOUT_ME,
     label: "sobre-mi",
-    url: "/#sobremi",
+    url: "/#sobre-mi",
   },
   {
     title: i18n.NAV.CONTACT,
@@ -57,8 +58,17 @@ const navItems = [
       }
     </div>
     <div
-      class="flex grow basis-0 justify-end items-center gap-x-4 text-black dark:text-white"
+      class="flex grow basis-0 justify-end items-center gap-x-1.5 text-black dark:text-white"
     >
+      <a
+        href="https://linkedin.com/in/stivenvr"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors hover:bg-[#0A66C2] py-2 size-8 px-0"
+        aria-label="linkedin"
+      >
+        <LinkedinIcon class="size-4" />
+      </a>
       <ThemeToggle />
       <SelectorLanguage />
     </div>
@@ -122,9 +132,7 @@ const navItems = [
       box-shadow:
         0 10px 15px -3px rgba(0, 0, 0, 0.2),
         0 4px 6px -2px rgba(0, 0, 0, 0.1);
-      /* ring-width: 1px; */
       backdrop-filter: blur(6px);
-      /* ring-color: rgba(255, 255, 255, 0.1); */
     }
   }
 </style>
